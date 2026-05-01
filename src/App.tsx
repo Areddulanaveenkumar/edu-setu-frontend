@@ -1,15 +1,13 @@
-import Navbar from "./shared/components/Navbar";
+import Navbar from "./shared/Component/Navbar";
+import Footer from "./shared/Component/Footer";
+import AppRoutes from "./app/routes/AppRoutes";
 
-function App() {
+export default function App() {
   return (
     <>
       <Navbar />
-       <div className="p-10">Home Content</div>
-       <div className="bg-red-500 text-white p-4">
-  Tailwind Test
-</div>
+      <AppRoutes />
+      <Footer />
     </>
   );
 }
-
-export default App;
